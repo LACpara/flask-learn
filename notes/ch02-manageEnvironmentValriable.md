@@ -35,3 +35,5 @@ $ touch .env .flaskenv
 ```
 
 其中 `flaskenv` 用来存储 Flask 命令行系统相关的公开环境变量；而 `.env` 则用来存储敏感数据（因此要把它纳入 `.gitignore` 文件中）。
+
+[官网有关配置的文档链接](https://flask.org.cn/en/3.0.x/config/#builtin-configuration-values)
