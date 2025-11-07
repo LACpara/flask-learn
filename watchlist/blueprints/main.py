@@ -29,7 +29,7 @@ def settings():
 def index():
     if request.method == 'POST':
         title = request.form.get('title').strip()
-        year = request.form.get('title').strip()
+        year = request.form.get('year').strip()
         if not title or not year or len(year)>4 or len(title)>60:
             flash("Invalid input.")
             return redirect(url_for("main.index"))

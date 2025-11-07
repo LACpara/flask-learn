@@ -55,7 +55,7 @@ def register_commands(app):
             user.set_password(password)
         else:
             click.echo("Creating user...")
-            user = User(name=username, username="admin")
+            user = User(name='admin', username=username)
             user.set_password(password)
             db.session.add(user)
         db.session.commit()
